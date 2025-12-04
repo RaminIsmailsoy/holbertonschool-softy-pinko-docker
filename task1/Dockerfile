@@ -10,6 +10,7 @@ RUN apt-get upgrade -y
 # Install Python3 and pip3
 RUN apt-get install -y python3 python3-pip
 
+# If you get a This environment is externally managed error when trying to install Python packages, add the following line before calling pip on your Dockerfile
 RUN rm /usr/lib/python*/EXTERNALLY-MANAGED || true
 
 # Install Flask using pip3
