@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Update the package lists for upgrades for packages that need upgrading
-RUN apt-get update
+RUN apt-get update -y
 
 # Upgrade all the installed packages
 RUN apt-get upgrade -y
