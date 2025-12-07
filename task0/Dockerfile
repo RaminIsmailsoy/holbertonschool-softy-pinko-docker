@@ -8,4 +8,4 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # When the Docker container is run, echo "Hello, World!"
-CMD echo "Hello, World!"
+CMD ["echo", "Hello, World!"]
